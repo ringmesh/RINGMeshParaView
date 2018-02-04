@@ -1,0 +1,28 @@
+<ServerManagerConfiguration>
+  <ProxyGroup name="sources">
+    <!-- ================================================================== -->
+    <SourceProxy name="GeoModelReader" class="vtkGeoModelReader" label="GeoModelReader">
+      <Documentation
+         long_help="Read a GM file."
+         short_help="Read a GM file.">
+      </Documentation>
+      <StringVectorProperty
+            name="FileName"
+            animateable="0"
+            command="SetFileName"
+            number_of_elements="1">
+        <FileListDomain name="files"/>
+        <Documentation>
+          This property specifies the file name for the GM reader.
+        </Documentation>
+      </StringVectorProperty>
+ 
+      <Hints>
+        <ReaderFactory extensions="gm"
+                       file_description="RINGMesh GeomModel file format" />
+     </Hints>
+    </SourceProxy>
+    <!-- End GeoModelReader -->
+  </ProxyGroup>
+  <!-- End Filters Group -->
+</ServerManagerConfiguration>
