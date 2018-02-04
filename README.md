@@ -17,5 +17,7 @@ Please follow the tutorial [here](https://www.paraview.org/Wiki/ParaView:Build_A
 mkdir build
 cd build
 cmake-gui ..
+cd Release
+make
 ```
 
